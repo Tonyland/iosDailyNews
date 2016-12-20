@@ -6,13 +6,13 @@
 //  Copyright © 2016年 mao. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MABaseViewController.h"
 
-@interface ViewController ()
+@interface MABaseViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MABaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

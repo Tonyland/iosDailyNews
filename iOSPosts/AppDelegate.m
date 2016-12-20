@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MATabbarController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    MATabbarController *tabbarController = [[MATabbarController alloc]init];
+    UINavigationController *nav =[[UINavigationController alloc]initWithRootViewController:tabbarController];
+    
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [_window setRootViewController:nav];
+    [_window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
